@@ -1,0 +1,230 @@
+ProjectName
+mern-estate
+
+Username	
+SahandEstate
+
+Password
+Sahand
+
+IP Address
+current IP address 0.0.0.0
+14.192.132.49/32
+ 
+ mongodb+srv://SahandEstate:<password>@mern-estate.qkoljxc.mongodb.net/?retryWrites=true&w=majority&appName=mern-estate
+
+
+
+
+
+
+Intsall React.js & Tailwind CSS & create the first template.
+
+Install React:
+umarfarooq@umarfarooq-Latitude-E5470:~/doc/proj/realestateproj$ npm create vite@latest client
+React + JAVASCRIPT + SWC
+
+
+Install npm:
+umarfarooq@umarfarooq-Latitude-E5470:~/doc/proj/realestateproj$ cd client 
+umarfarooq@umarfarooq-Latitude-E5470:~/doc/proj/realestateproj/client$ npm i
+
+
+Install Tailwind By Vite using React:
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+
+
+Configure your template paths:
+ content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",  ],
+  
+  
+Add the Tailwind directives to your CSS:
+paste
+
+  
+Delete App.css
+App.jsx rfc
+npm run dev  
+
+
+Initialize the GitHub Repository:
+git init
+add all files by:
+git add . or git add all
+umarfarooq@umarfarooq-Latitude-E5470:~/doc/proj/realestateproj/client$ git commit -m "Real Estate Marketplace with React MERN"
+
+
+Create repository in github:
+Name+Desc+Public
+or push an existing repository from the command line
+git remote add origin https://github.com/umarfarooq-webdesigner/MERN_ESTATE.git
+git branch -M main
+git push -u origin main
+
+
+Create pages & route of application:
+after create pages
+install
+npm i raect-router-dom
+
+
+CreateRoutes:
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import Home from './assets/pages/Home';
+import SignUp from './assets/pages/SignUp';
+import SignIn from './assets/pages/SignIn';
+import About from './assets/pages/About';
+import Profile from './assets/pages/Profile';
+export default function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+          <Route path='/' element={<Home /> } />
+          <Route path='/sign-in' element={<SignIn /> } />
+          <Route path='/sign-up' element={<SignUp /> } />
+          <Route path='/about' element={<About /> } />
+          <Route path='/profile' element={<Profile /> } />
+      </Routes>
+    </BrowserRouter>)}
+
+
+
+Adding all new pages into github by source control.
+commit and push
+
+
+Create Header component:
+assets/components/header.jsx
+add to all pages by using <header/> top in app.jsx
+
+
+Install icons by react:
+npm i react-icons
+import {FaSearch} from 'react-icons/fa';
+
+
+Craete page link:
+import { Link } from 'react-router-dom';
+
+
+Create and the run the server:
+api folder
+umarfarooq@umarfarooq-Latitude-E5470:~/doc/proj/realestateproj$ npm init -y
+umarfarooq@umarfarooq-Latitude-E5470:~/doc/proj/realestateproj$ npm i express
+package.json type: module
+
+node api/index.js
+
+
+Install nodemon to avoid refresh:
+npm i nodemon
+package.jason
+"scripts": {
+    "dev": "nodemon api/index.js",
+    "start": "node api/index.js"
+  },
+
+npm run dev
+
+
+Add this api into github:
+umarfarooq@umarfarooq-Latitude-E5470:~/doc/proj/realestateproj/client$ mv .git ../
+move .gitignore outside the client folder
+add all by source control
+
+
+Connect to databse:
+install MongoDb
+npm i mongoose
+
+Mongo= "mongodb+srv://SahandEstate:Sahand@mern-estate.59296ba.mongodb.net/mern-estate?retryWrites=true&w=majority&appName=mern-estate";
+mongoose.connect(process.env.Mongo);
+
+npm i dotenv
+install environmental variablex`
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
