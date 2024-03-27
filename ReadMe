@@ -148,7 +148,6 @@ npm i dotenv
 install environmental variablex`
 
 
-
 Create User Model Database:
 import mongoose from "mongoose";
 const userSchema = new mongoose.Schema(
@@ -176,6 +175,15 @@ export default User;
 
 
 Create and test API route:
+
+
+Create sign up API route:
+
+Hash the password or encrypt:
+npm install bcrypt
+import bcrypt from 'bcrypt';
+    const hashedPassword = bcrypt.hashSync(password, 10);
+    const newUser = new User({ username, email, password: hashedPassword});
 
 
 
