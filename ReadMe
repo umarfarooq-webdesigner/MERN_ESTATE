@@ -136,6 +136,7 @@ move .gitignore outside the client folder
 add all by source control
 
 
+
 Connect to databse:
 install MongoDb
 npm i mongoose
@@ -147,6 +148,34 @@ npm i dotenv
 install environmental variablex`
 
 
+
+Create User Model Database:
+import mongoose from "mongoose";
+const userSchema = new mongoose.Schema(
+    {
+    username: {
+        type : String,
+        require : true,
+        unique : true,
+    },
+    email: {
+        type : String,
+        require : true,
+        unique : true,
+    },
+    password: {
+        type : String,
+        require : true,
+    }, 
+       
+},
+    { timestamps : true}
+);
+const User = mongoose.model('User', userSchema);
+export default User;
+
+
+Create and test API route:
 
 
 
