@@ -186,7 +186,7 @@ import bcrypt from 'bcrypt';
     const newUser = new User({ username, email, password: hashedPassword});
 
 
-
+Create a middleware and a function to handle possible errors:
 
 
 
