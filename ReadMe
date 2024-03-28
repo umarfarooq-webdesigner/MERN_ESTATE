@@ -188,6 +188,8 @@ import bcrypt from 'bcrypt';
 
 Create a middleware and a function to handle possible errors:
 
+Complete sign up page UI:
+
 
 
 
