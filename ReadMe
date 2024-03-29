@@ -215,6 +215,10 @@ npm install @reduxjs/toolkit react-redux
 7.Install chrome ext Redux dev tool
 
 
+Add Redux persist:
+Install package Redux persist help us to add the user signin information in the local storage
+npm i redux-persist
+
 
 
 
