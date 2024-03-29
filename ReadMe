@@ -196,7 +196,13 @@ Complete sign up page functionality:
 Create sign in API route:
 
 
+install token for cookies:
+npm i jsonwebtoken
 
+
+Complete signin page functionality:
+UI, functionality, connected with the database
+interactivity between frontend and backend
 
 
 
